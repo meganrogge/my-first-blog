@@ -8,7 +8,9 @@
     color: #ffffff;
     font-size: 36pt;
     text-decoration: none;
-    margin-left: 30px;
+    margin-left:auto;
+    margin-left: auto;
+
 }
 
 .content {
@@ -16,7 +18,7 @@
 }
 
 h1, h2, h3, h4 {
-    font-family: 'Bookman Header', cursive;
+    font-family: 'Bookman Header';
 }
 
 .date {
