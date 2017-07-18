@@ -79,8 +79,8 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'djangogirls',
         'USER': 'megan',
-        'PASSWORD': '',
-        'HOST': 'localhost',
+        'PASSWORD': 'girlswhocode',
+        'HOST': 'webapp-312995.pythonanywhere.com',
         'PORT': '',
     }
 }
