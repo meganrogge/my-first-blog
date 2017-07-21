@@ -5,7 +5,8 @@ from .forms import PostForm, CommentForm
 from django.shortcuts import redirect
 from django.contrib.auth.decorators import login_required
 from .models import Post, Comment
-
+def color(request):
+    return render(request, 'blog/color.html', {'form': form})
 def post_list(request):
     posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
     return render(request, 'blog/post_list.html', {'posts': posts})
@@ -81,3 +82,6 @@ def comment_remove(request, pk):
     comment = get_object_or_404(Comment, pk=pk)
     comment.delete()
     return redirect('post_detail', pk=comment.post.pk)
+@login_required
+def color(request):
+    return render(request, 'blog/color.html')
