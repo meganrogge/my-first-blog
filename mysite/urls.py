@@ -7,5 +7,6 @@ urlpatterns = [
     url(r'', include('blog.urls')),
     url(r'^accounts/logout/$', views.logout, name='logout', kwargs={'next_page': '/'}),
     url(r'^login/$', views.login, name='login'),
-    url(r'^logout/$', views.logout, name='logout'),
+    
+
 ]
